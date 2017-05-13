@@ -118,7 +118,7 @@ public:
    */
   void UpdateRadar(MeasurementPackage meas_package);
   
-  void UpdateUKF(MeasurementPackage meas_package, MatrixXd Zsig, int n_z);
+  void UpdateUKF(const MeasurementPackage& meas_package, const MatrixXd& Zsig, int n_z);
   
   void NormAng(double *ang);
 };
